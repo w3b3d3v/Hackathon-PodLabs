@@ -79,7 +79,7 @@ Pré-requisito Instalação:
   REACT_APP_PINATA_API_KEY = '<SENHA>'
   REACT_APP_IPFS_GATEWAY='https://gateway.pinata.cloud/ipfs/'
   REACT_APP_ERC721_METADATA_EXTERNAL_LINK = 'https://github.com/seu-nome/'
-  REACT_APP_DAPP_CONTRACT = "<Endereço do Contrato Deployado>"
+  REACT_APP_DAPP_CONTRACT = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
 ```
 
 ## Frontend
@@ -158,18 +158,6 @@ Pré-requisito Instalação:
           ``` 
           No arquivo .env
           - REACT_APP_IPFS_GATEWAY='https://gateway.pinata.cloud/ipfs/'
-
-          ```
-
-  ## 4.3. Endereço do Contrato
-    - Aqui você deve alterar o endereço do contrato ao deployar o mesmo posteriormente.
-      - Exemplo:
-        ![Adicionar Pinata](./frontend/public/step9Pinata.png)
-
-      - Adicione aqui o endereço do contrato deployado
-          ``` 
-          No arquivo .env
-          - REACT_APP_DAPP_CONTRACT="<Coloque Aqui Após rodar 'npm run deploy mais a frente>"
 
           ```
 
@@ -343,16 +331,19 @@ Pré-requisito Instalação:
   ```
       npm run deploy
   ```
-  - Após executar o comando de deploy, anote o endereço do contrato deployado NFT (ERC-721) contract address:  
+  - Após executar o comando de deploy, anote o endereço do contrato deployado NFT (ERC-721) contract address e cheque se está igual ao .env:  
   
   ![Adicionar ](./frontend/public/step1React_APP_DAPP_CONTRACT.png)
 
-  ## 5.2. Configure o .env (REACT_APP_DAPP_CONTRACT)
+ ## Importante !
+  - Caso realize alguma alteração no contrato, altere o endereço do contrato e rode novamente o 'npm run deploy' 
+
+  ## 5.2. Configure o .env (REACT_APP_DAPP_CONTRACT) caso realize alteração no contrato
 
   ![Adicionar ](./frontend/public/step2React_APP_DAPP_CONTRACT.png)
 
   ```
-  REACT_APP_DAPP_CONTRACT = <Coloque o endereço do Contrato Deployado aqui>
+  REACT_APP_DAPP_CONTRACT = <Coloque o novo endereço do Contrato aqui, e rode novamente o deploy>
   ```
 
   ## 5.3 Envie faucet para seu endereço:
