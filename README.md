@@ -34,7 +34,6 @@ Solidity (js/ts) (R$1300):
 
 ```
 Nome do projeto:  Web3Dev Admin Activities Dashboard
-Pitch:
 ```
 ## Arquitetura do sistema
 ![Arquitetura Do Sistema](./frontend/public/NFTWeb3Dev.png)
